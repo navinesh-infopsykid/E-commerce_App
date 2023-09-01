@@ -15,15 +15,11 @@ class lettersm extends StatefulWidget {
 class _lettersmState extends State<lettersm> {
   double containerHeight = ht;
   double containerWidth = wt;
-  double k1h=ht, k1w=wt;
-
-
-
-
   int checkedIndex=0;
   var colorr=Colors.green;
   bool giff = false;
   AssetsAudioPlayer audioPlayer = AssetsAudioPlayer();// this will create a instance object of a class
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -98,13 +94,9 @@ class _lettersmState extends State<lettersm> {
           Future.delayed(const Duration(seconds: 3), () {
             setState(() {
               giff=false;
-
             });
-
           });
         });
-
-
       },
       child: Container(
           height: 50,
@@ -126,131 +118,3 @@ class _lettersmState extends State<lettersm> {
   }
 
 }
-// ---------------cont--------
-// Row(
-//   mainAxisAlignment: MainAxisAlignment.center,
-//   children: [
-//     Padding(
-//       padding: const EdgeInsets.all(12.0),
-//       child: GestureDetector(
-//         onTap: (){
-//           setState(() {
-//             k1h = k1h == ht ? hte : ht;
-//            k1w = k1w == wt ? wte : wt;
-//             colorr = colorr == Colors.black? Colors.red :Colors.black;
-//
-//             Future.delayed(Duration(seconds: 3),(){
-//               setState(() {
-//                k1h=ht;
-//                 k1w=wt;
-//                 colorr=Colors.black;
-//               });
-//             });
-//
-//           });
-//         },
-//         child: AnimatedContainer(
-//           height: k1h,
-//           width: k1w,
-//           decoration: BoxDecoration(border: Border.all(width: 5,color: colorr),
-//           borderRadius: BorderRadius.circular(10)),
-//           duration: Duration(seconds: 1),
-//           curve: Curves.fastEaseInToSlowEaseOut,
-//           child: Center(child: Text("க்",style: TextStyle(fontWeight: FontWeight.bold,fontSize: font),)),
-//         ),
-//       ),
-//     ),
-//     Padding(
-//       padding: const EdgeInsets.all(12.0),
-//       child: GestureDetector(
-//         onTap: (){
-//           setState(() {
-//             k2h = k2h == ht ? hte : ht;
-//             k2w = k2w == wt ? wte : wt;
-//             colorr = colorr == Colors.black? Colors.red :Colors.black;
-//
-//             Future.delayed(Duration(seconds: 3),(){
-//               setState(() {
-//                 k2h=ht;
-//                 k2w=wt;
-//                 colorr=Colors.black;
-//               });
-//             });
-//
-//           });
-//         },
-//         child: AnimatedContainer(
-//           height: k2h,
-//           width: k2w,
-//           decoration: BoxDecoration(border: Border.all(width: 5,color: colorr),
-//               borderRadius: BorderRadius.circular(10)),
-//           duration: Duration(seconds: 1),
-//           curve: Curves.fastEaseInToSlowEaseOut,
-//           child: Center(child: Text("ங்",style: TextStyle(fontWeight: FontWeight.bold,fontSize: font),)),
-//         ),
-//       ),
-//     ),
-//     Padding(
-//       padding: const EdgeInsets.all(12.0),
-//       child: GestureDetector(
-//         onTap: (){
-//           setState(() {
-//             k3h = k3h == ht ? hte : ht;
-//             k3w = k3w == wt ? wte : wt;
-//             colorr = colorr == Colors.black? Colors.red :Colors.black;
-//
-//             Future.delayed(Duration(seconds: 3),(){
-//               setState(() {
-//                 k3h=ht;
-//                 k3w=ht;
-//                 colorr=Colors.black;
-//               });
-//             });
-//
-//           });
-//         },
-//         child: AnimatedContainer(
-//           height: k3h,
-//           width: k3w,
-//           decoration: BoxDecoration(border: Border.all(width: 5,color: colorr),
-//               borderRadius: BorderRadius.circular(10)),
-//           duration: Duration(seconds: 1),
-//           curve: Curves.fastEaseInToSlowEaseOut,
-//           child: Center(child: Text("ச்",style: TextStyle(fontWeight: FontWeight.bold,fontSize: font),)),
-//         ),
-//       ),
-//     ),
-//     Padding(
-//       padding: const EdgeInsets.all(12.0),
-//       child: GestureDetector(
-//         onTap: (){
-//           setState(() {
-//             k4h = k4h == ht ? hte : ht;
-//             k4w = k4w == wt ? wte : wt;
-//             colorr = colorr == Colors.black? Colors.red :Colors.black;
-//
-//             Future.delayed(Duration(seconds: 3),(){
-//               setState(() {
-//                 k4h=ht;
-//                 k4w=ht;
-//                 colorr=Colors.black;
-//               });
-//             });
-//
-//           });
-//         },
-//         child: AnimatedContainer(
-//           height: k4h,
-//           width: k4w,
-//           decoration: BoxDecoration(border: Border.all(width: 5,color: colorr),
-//               borderRadius: BorderRadius.circular(10)),
-//           duration: Duration(seconds: 1),
-//           curve: Curves.fastEaseInToSlowEaseOut,
-//           child: Center(child: Text("ஞ்",style: TextStyle(fontWeight: FontWeight.bold,fontSize: font),)),
-//         ),
-//       ),
-//     ),
-//
-//
-//   ],
-// ),

@@ -311,6 +311,35 @@ var meiletters = [
 
 ];
 
+class umei{
+  String? umletter;
+  umei(this.umletter) ;
+}
+
+List umeilet=umeiletters.map((e) => umei(e["umletter"])).toList();
+
+var umeiletters = [
+  {"umletter":"க"},
+  {"umletter":"ங"},
+  {"umletter":"ச"},
+  {"umletter":"ஞ"},
+  {"umletter":"ட"},
+  {"umletter":"ண"},
+  {"umletter":"த"},
+  {"umletter":"ந"},
+  {"umletter":"ப"},
+  {"umletter":"ம"},
+  {"umletter":"ய"},
+  {"umletter":"ர"},
+  {"umletter":"ல"},
+  {"umletter":"வ"},
+  {"umletter":"ழ"},
+  {"umletter":"ள"},
+  {"umletter":"ற"},
+  {"umletter":"ன"},
+
+];
+
 
 class audiom{
   String? audm;
@@ -361,4 +390,140 @@ var colname = [
   {"cname":"Pink"},
   {"cname":"Brown"},
   {"cname":"Black"},
+];
+
+class fruitimages{
+  String? fruu;
+  fruitimages(this.fruu) ;
+}
+List fruitsimg=fruitsi.map((e) => fruitimages(e["fruu"])).toList();
+
+var fruitsi=[
+  {"fruu":"assets/images/apple.png"},
+  {"fruu":"assets/images/avacado.png"},
+  {"fruu":"assets/images/banana.png"},
+  {"fruu":"assets/images/drag.png"},
+  {"fruu":"assets/images/grapes.png"},
+  {"fruu":"assets/images/guava.png"},
+  {"fruu":"assets/images/kiwi.png"},
+  {"fruu":"assets/images/mang.png"},
+  {"fruu":"assets/images/orange.png"},
+  {"fruu":"assets/images/papaya.png"},
+  {"fruu":"assets/images/pine.png"},
+  {"fruu":"assets/images/plums.png"},
+  {"fruu":"assets/images/pomo.png"},
+  {"fruu":"assets/images/straw.png"},
+];
+
+
+class fruitname{
+  String? fru;
+  fruitname(this.fru) ;
+}
+List fruitsna=fruitsn.map((e) => fruitname(e["fru"])).toList();
+
+var fruitsn=[
+  {"fru":"Apple"},
+  {"fru":"Avocado"},
+  {"fru":"Banana"},
+  {"fru":"DragonFruit"},
+  {"fru":"Grapes"},
+  {"fru":"Guava"},
+  {"fru":"Kiwi"},
+  {"fru":"Mango"},
+  {"fru":"Orange"},
+  {"fru":"Papaya"},
+  {"fru":"Pineapple"},
+  {"fru":"Plums"},
+  {"fru":"Pomegranate"},
+  {"fru":"StrawBerry"},
+];
+
+class fruitdes{
+  String? frud;
+  fruitdes(this.frud) ;
+}
+List fruitsde=fruitsd.map((e) => fruitdes(e["frud"])).toList();
+
+var fruitsd=[
+  {"frud":"""
+   - vitamin A
+   - vitamin C
+   - vitamin E
+   - vitamin B1, or thiamine
+   - vitamin B2, or riboflavin
+   - vitamin B3, or niacin
+   - vitamin B6, or pyridoxine
+   - vitamin B9, or folate
+"""},
+  {"frud":"Avacado Description"},
+  {"frud":"Banana Description"},
+  {"frud":"DragonFruit Description"},
+  {"frud":"Grapes Description"},
+  {"frud":"Guava Description"},
+  {"frud":"Kiwi Description"},
+  {"frud":"Mango Description"},
+  {"frud":"Orange Description"},
+  {"frud":"Papaya Description"},
+  {"frud":"Pineapple Description"},
+  {"frud":"Plums Description"},
+  {"frud":"Pomegranate Description"},
+  {"frud":"StrawBerry Description"},
+];
+
+
+
+
+class fruitben{
+  String? frub;
+  fruitben(this.frub) ;
+}
+List fruitsbe=fruitsb.map((e) => fruitben(e["frub"])).toList();
+
+var fruitsb=[
+  {"frub":"""
+    - Your lung strength.
+    - Improve mental health.
+    - Reduce the risk of stroke.
+    - Lower cholesterol.
+    - Boost heart health.
+    - Lower the risk of diabetes.
+    - Lower the risk of cancer.
+    - Help maintain a moderate weight.
+    - Your gut health."""},
+  {"frub":"Avacado Description"},
+  {"frub":"Banana Description"},
+  {"frub":"DragonFruit Description"},
+  {"frub":"Grapes Description"},
+  {"frub":"Guava Description"},
+  {"frub":"Kiwi Description"},
+  {"frub":"Mango Description"},
+  {"frub":"Orange Description"},
+  {"frub":"Papaya Description"},
+  {"frub":"Pineapple Description"},
+  {"frub":"Plums Description"},
+  {"frub":"Pomegranate Description"},
+  {"frub":"StrawBerry Description"},
+];
+
+
+class fruitfact{
+  String? fruf;
+  fruitfact(this.fruf) ;
+}
+List fruitsfa=ff.map((e) => fruitdes(e["fruf"])).toList();
+
+var ff=[
+  {"fruf":"Great source of essential vitamins"},
+  {"fruf":"Keeping cardiovascular diseases at ba"},
+  {"fruf":"High in fibre content"},
+  {"fruf":"Excellent source of nutrition for pregnant women"},
+  {"fruf":"Regulates blood pressure"},
+  {"fruf":"Keeps body weight in check"},
+  {"fruf":"Aids in digestion"},
+  {"fruf":"Nourishing the skin and hair"},
+  {"fruf":"Hydrates the body"},
+  {"fruf":"Boosts the immune system"},
+  {"fruf":"Pineapple Description"},
+
 ];

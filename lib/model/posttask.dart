@@ -5,12 +5,17 @@ import 'package:http/http.dart' as http;
 
 Future<Album> createAlbum(String title) async {
   final response = await http.post(
-    Uri.parse('https://jsonplaceholder.typicode.com/albums'),
+    Uri.parse('http://catodotest.elevadosoftwares.com/Category/InsertCategory'),
     headers: <String, String>{
       'Content-Type': 'application/json; charset=UTF-8',
     },
     body: jsonEncode(<String, String>{
-      'title': title,
+      "categoryId": "219",
+      "category": "jj",
+      "description": "hh",
+      "deletedOn": "null",
+      "removedRemarks": "null",
+      "createdBy": "1"
     }),
   );
 
@@ -102,7 +107,6 @@ class _twoapiState extends State<twoapi> {
         } else if (snapshot.hasError) {
           return Text('${snapshot.error}');
         }
-
         return const CircularProgressIndicator();
       },
     );

@@ -66,7 +66,11 @@ class _hometamilState extends State<hometamil>
                 child: ElevatedButton(onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (
                       context) => letterstamil()));
-                }, child: Text("            உயிரெழுத்துகள்             ->",style: TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.w400),)),
+                }, child: ListTile(
+                  title:Center(child: Text("உயிரெழுத்துகள்",style: TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.w400),)),
+                  trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                ),
+                ),
               ),
               Divider(thickness: 10,),
               Container(
@@ -75,7 +79,26 @@ class _hometamilState extends State<hometamil>
                 child: ElevatedButton(onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (
                       context) => lettersm()));
-                }, child: Text("          மெய்யெழுத்துகள்            ->",style: TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.w400),)),
+                }, child: ListTile(
+                  title: Center(child: Text("மெய்யெழுத்துகள்",style: TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.w400),)),
+                  trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                )
+
+                ),
+              ),
+              Divider(thickness: 10,),
+              Container(
+                height: 55,
+
+                child: ElevatedButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (
+                      context) => lettersum()));
+                }, child: ListTile(
+                  title: Center(child: Text("உயிர்மெய்யெழுத்துகள்",style: TextStyle(color:Colors.white,fontSize: 25,fontWeight: FontWeight.w400),)),
+                  trailing: Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                )
+
+                ),
               ),
               Divider(thickness: 10,),
 

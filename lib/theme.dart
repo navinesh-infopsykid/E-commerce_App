@@ -9,7 +9,7 @@ final lighttheme = ThemeData(
   brightness: Brightness.light,
   primary: Color(0xFF030328),
   // primary: Color(0xFF030328),
-  onPrimary: Color(0xFF030328),
+  onPrimary: Colors.white,
   secondary: Color(0xFFf37b67),
   onSecondary: Color(0xFFFFFFFF),
   error: Color(0xFFBA1A1A),
